@@ -1,0 +1,24 @@
+//imports
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+//general-settings
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
+}
+@mixin remove-button-defaults {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  outline: none !important;
+  cursor: pointer;
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+    outline: none;
+  }
+}

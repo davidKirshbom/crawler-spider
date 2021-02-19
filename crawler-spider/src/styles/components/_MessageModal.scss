@@ -1,0 +1,43 @@
+.modal-bg {
+  background: rgba(0, 0, 0, 0.452);
+
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-container {
+  width: 50%;
+  height: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  border-radius: 1%;
+  justify-content: space-around;
+  padding: 10px;
+}
+.modal-content {
+  font-size: 2.7rem;
+  text-align: center;
+}
+.modal-button {
+  @include remove-button-defaults;
+  height: 50px;
+  width: 70px;
+  border: 3px solid gray;
+  border-radius: 20%;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+  &:hover {
+    background: gray;
+    color: white;
+  }
+}
